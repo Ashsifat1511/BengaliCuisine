@@ -1,0 +1,209 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+
+.main {
+    position: relative;
+    margin-left: 250px;
+    padding: 0px;
+    width: 85%;
+}
+
+body a{
+    text-decoration: none;
+    color: #000;
+}
+.success {
+    margin: 20px; /* Adjust margin as needed */
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+.alert-error {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+.header {
+    display: flex;
+    justify-content: space-between; /* Align items with space between them */
+    align-items: center; /* Align items vertically */
+}
+
+.headerimg {
+    /* Align to the right */
+    margin-left: auto; /* Pushes .headerimg to the right */
+}
+
+.headercontent {
+    flex: 1;
+}
+
+.headerimg img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.divide {
+    display: none;
+    width: 100%;
+    opacity: 0.5;
+    background-color: rgb(181, 181, 181);
+}
+
+.search {
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.search form {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.search input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px; /* Adjust width as needed */
+}
+
+.search button {
+    background-color: #f4f4f4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px; /* Adjust margin as needed */
+}
+
+.search button img {
+    width: 20px;
+    height: 20px;
+}
+.add {
+    display: flex;
+    align-items: center; 
+}
+
+.add h4 {
+    margin-right: 10px;
+}
+
+.add img {
+    width: 24px; 
+    height: 24px;
+}
+
+.showitem {
+    margin: 20px;
+    overflow-x: auto; /* Enables horizontal scrolling if table width exceeds the container width */
+}
+
+.showitem table {
+    width: 100%; /* Full width to fill the container */
+    border-collapse: collapse; /* Collapses border to avoid double border where cells touch */
+    background-color: #fff; /* White background for readability */
+}
+
+.showitem th, .showitem td {
+    text-align: left; /* Align text to the left within cells */
+    padding: 12px 15px; /* Padding inside the cells */
+    border-bottom: 1px solid #ddd; /* Light grey border for each row */
+}
+
+.showitem th {
+    background-color: #333; /* Dark background for header */
+    color: white; /* White text color for header */
+    font-weight: bold;
+}
+
+.showitem td {
+    color: #333; /* Dark text color for cells */
+}
+
+.showitem tr:nth-child(even) {
+    background-color: #f2f2f2; /* Zebra striping for rows */
+}
+
+.showitem tr:hover {
+    background-color: #ddd; /* Light grey background on row hover for better interactivity */
+}
+
+.showitem a, .showitem button {
+    display: inline-block; /* Ensures links and buttons are correctly aligned and appear inline */
+    vertical-align: middle; /* Aligns elements vertically in the middle */
+    margin-right: 5px; /* Adds a small margin to the right for spacing between edit and delete buttons */
+}
+
+.showitem button {
+    border: none; /* Removes the border from buttons */
+    background: none; /* Removes any background color from buttons */
+    cursor: pointer; /* Changes the cursor to a pointer when hovered over the button */
+}
+
+.showitem img {
+    width: 24px; /* Standard size for action icons */
+    height: 24px;
+}
+
+.showitem form {
+    display: inline; /* Keeps the form inline */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 150px; /* Smaller sidebar for tablet and smaller devices */
+        padding-top: 15px;
+    }
+
+    .content {
+        margin-left: 150px;
+        width: calc(100% - 150px);
+    }
+
+    .sidebar h2, .sidebar h3, .sidebar a {
+        font-size: 16px; /* Smaller font size for compact appearance */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sidebar {
+        width: 100px; /* Even smaller sidebar for mobile devices */
+        padding-top: 10px;
+    }
+
+    .content {
+        margin-left: 100px;
+        width: calc(100% - 100px);
+    }
+
+    .sidebar h2, .sidebar h3, .sidebar a {
+        font-size: 14px; /* Further reduce font size for mobile devices */
+    }
+
+    .header, .search, .add, .showitem {
+        flex-direction: column; /* Stack elements vertically on small screens */
+    }
+
+    .showitem table, .showitem th, .showitem td {
+        font-size: smaller; /* Smaller font size for better readability */
+    }
+}

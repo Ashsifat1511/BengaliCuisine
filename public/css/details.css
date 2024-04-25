@@ -1,0 +1,55 @@
+/* General Body and Main Container Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Dashboard Link Style */
+.dashboard a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Header and Image Styles */
+.item-name h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.item-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+/* Text Content Styling */
+.item-spice p, .description-section p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+strong {
+    color: #000;
+}

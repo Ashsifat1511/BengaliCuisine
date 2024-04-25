@@ -1,0 +1,55 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 80%;
+    max-width: 960px;
+}
+
+.back a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+thead {
+    background-color: #007bff;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+p {
+    color: #333;
+    font-size: 16px;
+}
