@@ -59,14 +59,9 @@ class DessertController extends Controller
         return view('dessert.details', compact('item'));
     }
 
-    public function search(Request $request)
-    {
-        $search = $request->input('search');
-        
-        //fetch all dessert items from dish table where name is like the search query
-
-        $dessertitems = Dish::where('category', 'dessert')->where('name', 'like', "%$search%")->get();
-
+    public function search(Request $request) {
+        $query = $request->input('query');
+        $dessertitems = Dish::where('category', 'dessert')->where('name', 'like', "%$query%")->get();
         return view('dessert.search', compact('dessertitems'));
     }
 }

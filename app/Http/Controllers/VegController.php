@@ -60,11 +60,9 @@ class VegController extends Controller
         return view('veg.details', compact('item'));
     }
 
-    public function search(Request $request)
-    {
-        $search = $request->input('search');
-        $vegitems = Dish::where('category', 'veg')->where('name', 'like', "%$search%")->get();
-
+    public function search(Request $request) {
+        $query = $request->input('query');
+        $vegitems = Dish::where('category', 'veg')->where('name', 'like', "%$query%")->get();
         return view('veg.search', compact('vegitems'));
     }
 
